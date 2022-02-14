@@ -31,18 +31,14 @@ class Cinema():
 def day(cinema):
 
     for i in range(3):
-        numTickets = 0
-        numTickets = random.randint(1,3)
+        num = 0
+        num = random.randint(1,3)
         # print(numTickets)
         time.sleep(1)
-        cinema.buy(2)
+        cinema.buy(num)
+        num = random.randint(1,3)
+        cinema.snacks(num)
 
-    for i in range(3):
-        numSnack = 0
-        numSnack = random.randint(1,2)
-        # print(numTickets)
-        time.sleep(1)
-        cinema.snacks(numSnack)
 
 if __name__ == '__main__':
     cinema = Cinema()
